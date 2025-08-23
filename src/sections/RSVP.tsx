@@ -41,7 +41,7 @@ export default function RSVP() {
       <div className="mx-auto max-w-3xl px-6 lg:px-8">
         <div className="card p-8">
           <h2 className="font-display text-3xl font-extrabold text-birthday-pink">
-            RSVP
+            Deandre Invitation Form
           </h2>
           <p className="mt-2 text-gray-600">Let us know if you can make it!</p>
           {!submitted ? (
