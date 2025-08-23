@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg: 255 251 235;
+  }
+  body {
+    @apply text-gray-800 antialiased;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center rounded-full px-5 py-2.5 font-semibold shadow-sm transition active:scale-95;
+  }
+  .btn-primary {
+    @apply btn bg-birthday-pink text-white hover:bg-pink-500;
+  }
+  .card {
+    @apply rounded-3xl bg-white/80 backdrop-blur shadow-lg border border-white/60;
+  }
+}
