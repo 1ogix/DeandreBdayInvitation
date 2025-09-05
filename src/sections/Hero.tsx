@@ -33,7 +33,7 @@ export default function Hero() {
             You're invited!
           </span>
           <h1 className="mt-6 font-display text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-birthday-pink">
-            DeAndre's Birthday Bash
+            DeAndre's Birthday Bashh
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-700">
             Join us for a day full of games, cake, and laughter as we celebrate
