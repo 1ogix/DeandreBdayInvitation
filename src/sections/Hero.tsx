@@ -2,10 +2,10 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <header className="relative isolate overflow-hidden">
+    <header className="relative isolate overflow-hidden bg-[url('/public/assets/hero/image.png')] bg-cover bg-center bg-fixed">
       <div className="absolute inset-0 -z-10">
         <svg
-          className="absolute -top-24 -left-24 w-96 h-96 text-birthday-pink/20"
+          className="absolute -top-24 -left-24 w-96 h-96 text-birthday-pink/40"
           viewBox="0 0 200 200"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -16,7 +16,7 @@ export default function Hero() {
           />
         </svg>
         <svg
-          className="absolute -bottom-24 -right-24 w-96 h-96 text-birthday-grape/20"
+          className="absolute -bottom-24 -right-24 w-96 h-96 text-birthday-grape/40"
           viewBox="0 0 200 200"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -27,17 +27,17 @@ export default function Hero() {
           />
         </svg>
       </div>
-      <div className="mx-auto max-w-7xl px-6 pb-20 pt-24 sm:pt-32 lg:px-8">
+      <div className="mx-auto max-w-7xl px-6 pb-20 pt-24 sm:pt-32 lg:px-8 h-[100vh] max-h-[1036px] lg:h-[80vh]">
         <div className="mx-auto max-w-2xl text-center">
           <span className="inline-block rounded-full bg-white/80 px-4 py-1 text-sm font-semibold text-birthday-grape shadow">
             You're invited!
           </span>
-          <h1 className="mt-6 font-display text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-birthday-pink">
+          <h1 className="mt-6 font-display text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-birthday-white">
             DeAndre's Birthday Bash
           </h1>
-          <p className="mt-6 text-lg leading-8 text-gray-700">
+          <p className="mt-6 text-lg leading-8 text-neutral-100">
             Join us for a day full of games, cake, and laughter as we celebrate
-            DeAndre turning 7! Costumes encouraged, smiles required.
+            DeAndre turning 4! Costumes encouraged, smiles required.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a href="#rsvp" className="btn btn-primary">

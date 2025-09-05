@@ -5,10 +5,13 @@ export default {
     extend: {
       colors: {
         birthday: {
-          pink: "#FF80B5",
-          sky: "#38BDF8",
-          lemon: "#FDE047",
-          grape: "#A78BFA",
+          // Shift palette toward forest greens and clean whites
+          // Keep the same keys to avoid changing classnames in components
+          pink: "#22C55E", // primary leaf green
+          sky: "#86EFAC", // light mint/leaf for headings
+          lemon: "#A3E635", // lime accent for highlights
+          grape: "#14532D", // deep forest green for contrast
+          white: "#F9FAFB", // soft off-white background
         },
       },
       fontFamily: {

@@ -10,7 +10,6 @@ export default function App() {
     <>
       <Hero />
       <Details />
-      <Gallery />
       <RSVP />
       <Footer />
     </>

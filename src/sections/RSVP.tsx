@@ -37,7 +37,7 @@ export default function RSVP() {
   }
 
   return (
-    <section id="rsvp" className="py-16 sm:py-24">
+    <section id="rsvp" className="py-16 sm:py-24 bg-lime-800">
       <div className="mx-auto max-w-3xl px-6 lg:px-8">
         <div className="card p-8">
           <h2 className="font-display text-3xl font-extrabold text-birthday-pink">

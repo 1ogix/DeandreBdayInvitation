@@ -2,9 +2,9 @@ import React from "react";
 
 export default function Details() {
   const items = [
-    { label: "When", value: "Saturday, Sept 6 • 2:00–5:00 PM" },
-    { label: "Where", value: "Sunshine Park, Picnic Area 3" },
-    { label: "Theme", value: "Superhero dress-up!" },
+    { label: "When", value: "Saturday, Oct 11 • 2:00–5:00 PM" },
+    { label: "Where", value: "Blk 22 Lot 16 Deca Homes Phase 1" },
+    { label: "Theme", value: "Italian Brainrot!" },
   ];
 
   return (
@@ -24,13 +24,17 @@ export default function Details() {
         </div>
         <div className="mt-8 card p-8">
           <h3 className="font-display text-2xl font-extrabold text-birthday-grape">
-            What to bring
+            Wish List
           </h3>
           <ul className="mt-4 grid list-disc gap-2 pl-5 sm:grid-cols-2">
-            <li>Comfy clothes or a superhero costume</li>
-            <li>Sunscreen and a hat</li>
-            <li>Reusable water bottle</li>
-            <li>Big smiles and energy for games!</li>
+            <li>Cars theme Clothes</li>
+            <li>Kid lunchbox</li>
+            <li>Sando</li>
+            <li>Pampers Pants XXL</li>
+            <li>Lactacyd Extra Milky</li>
+            <li>Coloring Books</li>
+            <li>Crayons</li>
+            <li>Story Books</li>
           </ul>
         </div>
       </div>
