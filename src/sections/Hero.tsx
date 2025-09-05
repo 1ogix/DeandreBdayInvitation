@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <header className="relative isolate overflow-hidden bg-[url('/public/assets/hero/image.webp')] bg-cover bg-center bg-fixed">
+    <header className="relative isolate overflow-hidden bg-[url('/public/assets/hero/image.webp')] bg-cover bg-center bg-fixed max-md:bg-bottom">
       <div className="absolute inset-0 -z-10">
         <svg
           className="absolute -top-24 -left-24 w-96 h-96 text-birthday-pink/40"
@@ -33,11 +33,11 @@ export default function Hero() {
             You're invited!
           </span>
           <h1 className="mt-6 font-display text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-birthday-white">
-            DeAndre's Birthday Bash
+            Deandre's Birthday Bash
           </h1>
           <p className="mt-6 text-lg leading-8 text-neutral-100">
             Join us for a day full of games, cake, and laughter as we celebrate
-            DeAndre turning 4! Costumes encouraged, smiles required.
+            Deandre turning 4! Costumes encouraged, smiles required.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a href="#rsvp" className="btn btn-primary">

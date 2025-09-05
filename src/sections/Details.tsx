@@ -10,6 +10,12 @@ export default function Details() {
   return (
     <section id="details" className="relative py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
+        <h2 className="font-display text-3xl font-extrabold text-birthday-sky text-center mt-2 mb-4">
+          Party Details
+        </h2>
+        <p className="mt-2 text-gray-600">
+          Everything you need to know for the big day.
+        </p>
         <div className="grid gap-6 md:grid-cols-3">
           {items.map((it) => (
             <div key={it.label} className="card p-8">
