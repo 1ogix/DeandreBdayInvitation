@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <header className="relative isolate overflow-hidden bg-[url('/public/assets/hero/image.webp')] bg-cover bg-center bg-fixed max-md:bg-bottom">
+    <header className="relative isolate overflow-hidden bg-[url('/public/assets/hero/image.webp')] bg-cover bg-center bg-fixed max-md:bg-bottom max-md:bg-local">
       <div className="absolute inset-0 -z-10">
         <svg
           className="absolute -top-24 -left-24 w-96 h-96 text-birthday-pink/40"
