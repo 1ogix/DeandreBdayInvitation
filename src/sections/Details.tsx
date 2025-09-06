@@ -30,10 +30,34 @@ export default function Details() {
         </div>
         <div className="mt-8 card p-8">
           <h3 className="font-display text-2xl font-extrabold text-birthday-grape">
+            Party Schedule
+          </h3>
+          <p className="mt-4 text-gray-700">
+            Here's a rough outline of how the party will go down:
+          </p>
+          <ul className="mt-4 grid list-disc gap-2 pl-5 sm:grid-cols-2">
+            <li>
+              2:00 PM - Kids’ Party Starts: Guests Arrive & Welcome Drinks
+            </li>
+            <li>2:30 PM - Icebreaker Games</li>
+            <li>2:45 PM - Main Activities (Crafts, Games)</li>
+            <li>3:15 PM - Birthday Song & Cake Time</li>
+            <li>3:20 PM - Food Service for Kids </li>
+            <li>3:45 PM - Pabitin, Piñata & Loot Bag Fun</li>
+            <li>4:00 PM - End of Kids’ Party, Free Play & Socializing</li>
+            <li>5:30 PM - Dinner for Adults</li>
+          </ul>
+          <p className="mt-4 text-gray-700">
+            Note: Schedule is flexible and may change based on the flow of the
+            party.
+          </p>
+        </div>
+        <div className="mt-8 card p-8">
+          <h3 className="font-display text-2xl font-extrabold text-birthday-grape">
             Wish List
           </h3>
           <ul className="mt-4 grid list-disc gap-2 pl-5 sm:grid-cols-2">
-            <li>Cars theme Clothes</li>
+            <li>Cars theme Clothes 4-5 yrs old size</li>
             <li>Kid lunchbox</li>
             <li>Sando</li>
             <li>Pampers Pants XXL</li>
