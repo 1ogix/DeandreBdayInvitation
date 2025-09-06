@@ -35,7 +35,7 @@ export default function Hero() {
           <h1 className="mt-6 font-display text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-birthday-white">
             Deandre's Birthday Bash
           </h1>
-          <p className="mt-6 text-lg leading-8 text-neutral-100">
+          <p className="mt-6 text-lg font-semibold leading-8 text-neutral-100">
             Join us for a day full of games, cake, and laughter as we celebrate
             Deandre turning 4! Costumes encouraged, smiles required.
           </p>
