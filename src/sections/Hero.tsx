@@ -27,7 +27,7 @@ export default function Hero() {
           />
         </svg>
       </div>
-      <div className="mx-auto max-w-7xl px-6 pb-20 pt-24 sm:pt-32 lg:px-8 h-[100vh] max-h-[1036px] lg:h-[80vh]">
+      <div className="mx-auto max-w-7xl px-6 pb-20 pt-24 sm:pt-32 lg:px-8 h-[100dvh] max-h-[1036px] lg:h-[80vh]">
         <div className="mx-auto max-w-2xl text-center">
           <span className="inline-block rounded-full bg-white/80 px-4 py-1 text-sm font-semibold text-birthday-grape shadow">
             You're invited!
