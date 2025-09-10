@@ -26,8 +26,19 @@ export default function Hero() {
             transform="translate(100 100)"
           />
         </svg>
+        {/* brainrot images position absolutes */}
+        {/* bomb croc */}
+        <img
+          src="/public/assets/characters/bombcroc 1.png"
+          className="motion-translate-x-in-[-33%] motion-translate-y-in-[0%] motion-opacity-in-[0%] motion-duration-[0.38s] motion-duration-[0.39s]/opacity motion-ease-linear absolute top-0 left-24 w-96 h-96 object-contain hidden xl:block"
+        />
+        {/* bomb goosini */}
+        <img
+          src="/public/assets/characters/bombinigusini.png"
+          className="motion-translate-x-in-[30%] motion-translate-y-in-[0%] absolute top-0 right-24 w-[26rem] h-[26rem] object-contain hidden xl:block"
+        />
       </div>
-      <div className="mx-auto max-w-7xl px-6 pb-20 pt-24 sm:pt-32 lg:px-8 h-[100dvh] max-h-[1036px] lg:h-[80vh]">
+      <div className="motion-translate-x-in-[0%] motion-translate-y-in-[14%] motion-duration-[0.60s] motion-ease-linear mx-auto max-w-7xl px-6 pb-20 pt-24 sm:pt-32 lg:px-8 h-[100dvh] max-h-[900px] lg:h-[100vh]">
         <div className="mx-auto max-w-2xl text-center">
           <span className="inline-block rounded-full bg-white/80 px-4 py-1 text-sm font-semibold text-birthday-grape shadow">
             You're invited!
