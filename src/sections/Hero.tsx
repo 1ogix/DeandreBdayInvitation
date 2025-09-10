@@ -1,6 +1,59 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
 export default function Hero() {
+  // Confetti canvas
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
+
+  useEffect(() => {
+    let rafId = 0;
+    let mounted = true;
+    let reset: (() => void) | undefined;
+
+    const start = async () => {
+      const canvas = canvasRef.current;
+      if (!canvas) return;
+
+      // Lazy-load to avoid SSR and reduce initial bundle
+      const { default: confetti } = await import("canvas-confetti");
+      if (!mounted) return;
+
+      const myConfetti = confetti.create(canvas, {
+        resize: true,
+        useWorker: true,
+      });
+      reset = myConfetti.reset;
+
+      const duration = 4000; // run for 4s
+      const end = Date.now() + duration;
+
+      const frame = () => {
+        myConfetti({
+          particleCount: 6,
+          angle: 90,
+          spread: 360,
+          scalar: 1.5,
+          startVelocity: 45,
+          ticks: 500,
+          origin: { y: 0.0 },
+        });
+        // visit https://ulitcos.github.io/react-canvas-confetti/ to play around
+        if (Date.now() < end) rafId = requestAnimationFrame(frame);
+      };
+
+      rafId = requestAnimationFrame(frame);
+    };
+
+    // Small delay before starting
+    const timeoutId = window.setTimeout(start, 500);
+
+    return () => {
+      mounted = false;
+      window.clearTimeout(timeoutId);
+      if (rafId) cancelAnimationFrame(rafId);
+      reset?.();
+    };
+  }, []);
+
   return (
     <header className="relative isolate overflow-hidden bg-[url('/assets/hero/image.webp')] bg-cover bg-center bg-fixed max-md:bg-bottom max-md:bg-local">
       <div className="absolute inset-0 -z-10">
@@ -38,13 +91,18 @@ export default function Hero() {
           className="motion-translate-x-in-[30%] motion-translate-y-in-[0%] absolute top-0 right-24 w-[26rem] h-[26rem] object-contain hidden xl:block"
         />
       </div>
+      {/* Confetti overlay canvas */}
+      <canvas
+        ref={canvasRef}
+        className="pointer-events-none absolute inset-0 w-full h-full z-10"
+      />
       <div className="motion-translate-x-in-[0%] motion-translate-y-in-[14%] motion-duration-[0.60s] motion-ease-linear mx-auto max-w-7xl px-6 pb-20 pt-24 sm:pt-32 lg:px-8 h-[100dvh] max-h-[900px] lg:h-[100vh]">
         <div className="mx-auto max-w-2xl text-center">
           <span className="inline-block rounded-full bg-white/80 px-4 py-1 text-sm font-semibold text-birthday-grape shadow">
             You're invited!
           </span>
           <h1 className="mt-6 font-display text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-birthday-white">
-            Deandre's Birthday Bash
+            Deandre's 4th Birthday
           </h1>
           <p className="mt-6 text-lg font-semibold leading-8 text-neutral-100">
             Join us for a day full of games, cake, and laughter as we celebrate
