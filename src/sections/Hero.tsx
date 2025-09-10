@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <header className="relative isolate overflow-hidden bg-[url('/public/assets/hero/image.webp')] bg-cover bg-center bg-fixed max-md:bg-bottom max-md:bg-local">
+    <header className="relative isolate overflow-hidden bg-[url('/assets/hero/image.webp')] bg-cover bg-center bg-fixed max-md:bg-bottom max-md:bg-local">
       <div className="absolute inset-0 -z-10">
         <svg
           className="absolute -top-24 -left-24 w-96 h-96 text-birthday-pink/40"
@@ -29,12 +29,12 @@ export default function Hero() {
         {/* brainrot images position absolutes */}
         {/* bomb croc */}
         <img
-          src="/public/assets/characters/bombcroc 1.png"
+          src="/assets/characters/bombcroc-1.png"
           className="motion-translate-x-in-[-33%] motion-translate-y-in-[0%] motion-opacity-in-[0%] motion-duration-[0.38s] motion-duration-[0.39s]/opacity motion-ease-linear absolute top-0 left-24 w-96 h-96 object-contain hidden xl:block"
         />
         {/* bomb goosini */}
         <img
-          src="/public/assets/characters/bombinigusini.png"
+          src="/assets/characters/bombinigusini.png"
           className="motion-translate-x-in-[30%] motion-translate-y-in-[0%] absolute top-0 right-24 w-[26rem] h-[26rem] object-contain hidden xl:block"
         />
       </div>
