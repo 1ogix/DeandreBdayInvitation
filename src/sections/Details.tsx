@@ -8,15 +8,12 @@ export default function Details() {
   ];
 
   return (
-    <section
-      id="details"
-      className="relative bg-[#030d00] pt-16 pb-16 sm:pt-24 sm:pb-24 xl:pt-[26rem]"
-    >
+    <section id="details" className="relative py-16 sm:py-24 bg-[#030d00]">
       {/* Decorative carousel (XL and up) */}
-      <div className="z-0 absolute inset-x-0 top-20 h-[26rem] overflow-hidden pointer-events-none">
-        <div className="absolute inset-0 will-change-transform animate-[carousel_10s_linear_infinite] flex items-center gap-10 w-[200%]">
+      <div className="z-0 absolute inset-x-0 top-20 block xl:block h-[26rem] overflow-hidden pointer-events-none">
+        <div className="inset-0 will-change-transform animate-[carousel_10s_linear_infinite] flex items-center gap-[9rem] sm:gap-[19rem] lg:gap-24 w-[200%]">
           {/* set A */}
-          <div className="flex items-center gap-10 w-max">
+          <div className="flex items-center gap-0 sm:24 w-auto">
             <img
               src="/assets/characters/bombcroc-1.png"
               className="scale-x-[-1] w-96 h-96 object-contain select-none"
@@ -29,7 +26,10 @@ export default function Details() {
             />
           </div>
           {/* set B (duplicate for seamless loop) */}
-          <div className="flex items-center gap-10 w-max" aria-hidden="true">
+          <div
+            className="flex items-center gap-0 sm:24 w-auto"
+            aria-hidden="true"
+          >
             <img
               src="/assets/characters/bombcroc-1.png"
               className="scale-x-[-1] w-96 h-96 object-contain select-none"
@@ -41,7 +41,7 @@ export default function Details() {
               alt=""
             />
           </div>
-          <div className="flex items-center gap-24 w-max">
+          <div className="flex items-center gap-0 sm:24 w-auto">
             <img
               src="/assets/characters/bombcroc-1.png"
               className="scale-x-[-1] w-96 h-96 object-contain select-none"
@@ -54,7 +54,10 @@ export default function Details() {
             />
           </div>
           {/* set B (duplicate for seamless loop) */}
-          <div className="flex items-center gap-24 w-max" aria-hidden="true">
+          <div
+            className="flex items-center gap-0 sm:24 w-max"
+            aria-hidden="true"
+          >
             <img
               src="/assets/characters/bombcroc-1.png"
               className="scale-x-[-1] w-96 h-96 object-contain select-none"
