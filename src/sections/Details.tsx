@@ -11,7 +11,7 @@ export default function Details() {
     <section id="details" className="relative py-16 sm:py-24 bg-[#030d00]">
       {/* Decorative carousel (XL and up) */}
       <div className="z-0 absolute inset-x-0 top-20 block xl:block h-[26rem] overflow-hidden pointer-events-none">
-        <div className="inset-0 will-change-transform animate-[carousel_10s_linear_infinite] flex items-center gap-[9rem] sm:gap-[19rem] lg:gap-24 w-[200%]">
+        <div className="inset-0 will-change-transform animate-[carousel_10s_linear_infinite] flex items-center gap-[6rem] sm:gap-[19rem] lg:gap-24 w-[200%]">
           {/* set A */}
           <div className="flex items-center gap-0 sm:24 w-auto">
             <img
