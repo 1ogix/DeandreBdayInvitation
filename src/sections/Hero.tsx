@@ -90,6 +90,16 @@ export default function Hero() {
           src="/assets/characters/bombinigusini.png"
           className="motion-translate-x-in-[30%] motion-translate-y-in-[0%] absolute top-0 right-24 w-[26rem] h-[26rem] object-contain hidden xl:block"
         />
+        {/* LEFT SIDE CHARACTERS */}
+        <img
+          src="/assets/characters/left.webp"
+          className="motion-translate-x-in-[-33%] motion-translate-y-in-[0%] motion-opacity-in-[0%] motion-duration-[0.38s] motion-duration-[0.39s]/opacity motion-ease-linear absolute bottom-0 left-0 w-48 h-48 object-contain sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 xl:w-[28rem] xl:h-[28rem]"
+        />
+        {/* RIGHT SIDE CHARACTERS */}
+        <img
+          src="/assets/characters/right.webp"
+          className="motion-translate-x-in-[30%] motion-translate-y-in-[0%] absolute bottom-[-5%] right-0 w-48 h-48 object-contain sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 xl:w-[28rem] xl:h-[28rem]"
+        />
       </div>
       {/* Confetti overlay canvas */}
       <canvas

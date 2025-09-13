@@ -8,18 +8,18 @@ export default function Details() {
   ];
 
   return (
-    <section id="details" className="relative py-16 sm:py-24">
-      <div className="mx-auto max-w-6xl px-6 lg:px-8">
-        <h2 className="font-display text-3xl font-extrabold text-birthday-sky text-center mt-2 mb-4">
+    <section id="details" className="relative py-16 sm:py-24 bg-[#030d00]">
+      <div className="mx-auto max-w-6xl px-6 lg:px-8 ">
+        <h2 className="font-display text-5xl font-extrabold text-birthday-sky text-center mt-2 mb-4">
           Party Details
         </h2>
-        <p className="mt-2 text-gray-600">
+        <p className="mt-2 text-gray-100 mb-8">
           Everything you need to know for the big day.
         </p>
         <div className="grid gap-6 md:grid-cols-3">
           {items.map((it) => (
             <div key={it.label} className="card p-8">
-              <div className="text-sm font-semibold text-birthday-sky">
+              <div className="text-xl font-semibold text-birthday-grape">
                 {it.label}
               </div>
               <div className="mt-2 text-xl font-bold text-gray-900">
@@ -48,8 +48,10 @@ export default function Details() {
             <li>5:30 PM - Dinner for Adults</li>
           </ul>
           <p className="mt-4 text-gray-700">
-            Note: Schedule is flexible and may change based on the flow of the
-            party.
+            <strong>
+              Note: Schedule is flexible and may change based on the flow of the
+              party.
+            </strong>
           </p>
         </div>
         <div className="mt-8 card p-8">
@@ -57,7 +59,7 @@ export default function Details() {
             Wish List
           </h3>
           <ul className="mt-4 grid list-disc gap-2 pl-5 sm:grid-cols-2">
-            <li>Cars theme Clothes 4-5 yrs old size</li>
+            <li>Any Lightning Mcqueen or Thomas the Train</li>
             <li>Kid lunchbox</li>
             <li>Sando</li>
             <li>Pampers Pants XXL</li>
