@@ -10,8 +10,8 @@ export default function Details() {
   return (
     <section id="details" className="relative py-16 sm:py-24 bg-[#030d00]">
       {/* Decorative carousel (XL and up) */}
-      <div className="z-0 absolute inset-x-0 top-20 block xl:block h-[26rem] overflow-hidden pointer-events-none">
-        <div className="inset-0 will-change-transform animate-[carousel_10s_linear_infinite] flex items-center gap-[6rem] sm:gap-[19rem] lg:gap-24 w-[200%]">
+      <div className="z-0 absolute inset-x-0 max-sm:top-[2rem] top-20 block xl:block h-[26rem] overflow-hidden pointer-events-none">
+        <div className="inset-0 will-change-transform animate-[carousel_10s_linear_infinite] flex items-center gap-[6rem] sm:gap-[11rem] md:gap-[17rem] lg:gap-[16rem] xl:gap-24 w-[200%]">
           {/* set A */}
           <div className="flex items-center gap-0 sm:24 w-auto">
             <img
@@ -78,7 +78,7 @@ export default function Details() {
         <p className="mt-2 text-gray-100 mb-8 text-center">
           Everything you need to know for the big day.
         </p>
-        <div className="grid gap-6 md:grid-cols-3 mt-[200px]">
+        <div className="grid gap-6 md:grid-cols-3 max-sm:mt-[120px] mt-[200px]">
           {items.map((it) => (
             <div key={it.label} className="card p-8">
               <div className="text-xl font-semibold text-birthday-grape">
