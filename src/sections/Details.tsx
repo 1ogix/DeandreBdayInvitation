@@ -9,14 +9,70 @@ export default function Details() {
 
   return (
     <section id="details" className="relative py-16 sm:py-24 bg-[#030d00]">
-      <div className="mx-auto max-w-6xl px-6 lg:px-8 ">
-        <h2 className="font-display text-5xl font-extrabold text-birthday-sky text-center mt-2 mb-4">
+      {/* Decorative carousel (XL and up) */}
+      <div className="z-0 absolute inset-x-0 top-20 hidden xl:block h-[26rem] overflow-hidden pointer-events-none">
+        <div className="absolute inset-0 will-change-transform animate-[carousel_10s_linear_infinite] flex items-center gap-24 w-[200%]">
+          {/* set A */}
+          <div className="flex items-center gap-24 w-max">
+            <img
+              src="/assets/characters/bombcroc-1.png"
+              className="scale-x-[-1] w-96 h-96 object-contain select-none"
+              alt=""
+            />
+            <img
+              src="/assets/characters/bombinigusini.png"
+              className="w-[26rem] h-[26rem] object-contain select-none"
+              alt=""
+            />
+          </div>
+          {/* set B (duplicate for seamless loop) */}
+          <div className="flex items-center gap-24 w-max" aria-hidden="true">
+            <img
+              src="/assets/characters/bombcroc-1.png"
+              className="scale-x-[-1] w-96 h-96 object-contain select-none"
+              alt=""
+            />
+            <img
+              src="/assets/characters/bombinigusini.png"
+              className="w-[26rem] h-[26rem] object-contain select-none"
+              alt=""
+            />
+          </div>
+          <div className="flex items-center gap-24 w-max">
+            <img
+              src="/assets/characters/bombcroc-1.png"
+              className="scale-x-[-1] w-96 h-96 object-contain select-none"
+              alt=""
+            />
+            <img
+              src="/assets/characters/bombinigusini.png"
+              className="w-[26rem] h-[26rem] object-contain select-none"
+              alt=""
+            />
+          </div>
+          {/* set B (duplicate for seamless loop) */}
+          <div className="flex items-center gap-24 w-max" aria-hidden="true">
+            <img
+              src="/assets/characters/bombcroc-1.png"
+              className="scale-x-[-1] w-96 h-96 object-contain select-none"
+              alt=""
+            />
+            <img
+              src="/assets/characters/bombinigusini.png"
+              className="w-[26rem] h-[26rem] object-contain select-none"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div className="relative z-1 mx-auto max-w-6xl px-6 lg:px-8 ">
+        <h2 className="font-display text-5xl font-extrabold text-birthday-sky neon-sky text-center mt-2 mb-4">
           Party Details
         </h2>
-        <p className="mt-2 text-gray-100 mb-8">
+        <p className="mt-2 text-gray-100 mb-8 text-center">
           Everything you need to know for the big day.
         </p>
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-3 mt-[200px]">
           {items.map((it) => (
             <div key={it.label} className="card p-8">
               <div className="text-xl font-semibold text-birthday-grape">
@@ -60,13 +116,11 @@ export default function Details() {
           </h3>
           <ul className="mt-4 grid list-disc gap-2 pl-5 sm:grid-cols-2">
             <li>Any Lightning Mcqueen or Thomas the Train</li>
-            <li>Kid lunchbox</li>
             <li>Sando</li>
             <li>Pampers Pants XXL</li>
             <li>Lactacyd Extra Milky</li>
-            <li>Coloring Books</li>
-            <li>Crayons</li>
-            <li>Story Books</li>
+            <li>Coloring and Story Books</li>
+            <li>Titanic Toys [current favorite]</li>
           </ul>
         </div>
       </div>

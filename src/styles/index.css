@@ -22,3 +22,21 @@
     @apply rounded-3xl bg-white/80 backdrop-blur shadow-lg border border-white/60;
   }
 }
+
+/* Infinite horizontal carousel animation */
+@keyframes carousel {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-51.7%);
+  }
+}
+
+@layer utilities {
+  /* Neon glow for birthday sky text */
+  .neon-sky {
+    text-shadow: 0 0 2px #86efac, 0 0 1px #86efac, 0 0 12px #86efac,
+      0 0 24px rgba(134, 239, 172, 0), 0 0 48px rgba(134, 239, 172, 0.1);
+  }
+}
